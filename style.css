@@ -1,0 +1,1132 @@
+/* general */
+@font-face {
+  font-family: nehama;
+  src: url(assets/fonts/nehama-webfont.ttf), url(assets/fonts/nehama-webfont.eot);
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url(assets/fonts/Rubik-Regular.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Rubik-Bold;
+  src: url(assets/fonts/Rubik-Bold.ttf);
+  font-weight: 800;
+}
+
+html,
+body, #main {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  direction: rtl;
+  font-family: "Rubik";
+}
+
+#main {
+  background-image: url("assets/media/bg.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.page {
+  display: none;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.robin-hod {
+  position: fixed;
+  z-index: 2;
+  bottom: 0;
+}
+
+.big-robin {
+  height: 50vh;
+  right: -15vw;
+}
+
+.speech-bubble {
+  font-family: "nehama", "Rubik";
+  font-size: 1.4rem;
+  color: rgb(60, 60, 59);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.big-bubble {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 90%;
+  left: 0;
+  padding: 5vw;
+  background-image: url(assets/media/bubble_big.svg);
+}
+
+.right {
+  color: rgba(105,255,160);
+}
+
+.wrong {
+  color: rgba(255,123,123);
+}
+
+.exer-speech-bubble {
+  position: relative;
+  z-index: 2;
+  width: 58vw;
+  height: 27vw;
+  margin: auto;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  padding: 4vw 2vw;
+  padding-right: 33vw;
+  background-image: url(assets/media/bubble_robin_big.svg);
+}
+
+.content-flex {
+  display: flex;
+  position: relative;
+  width: 90%;
+  margin: auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.content-flex-height {
+  top: 4vh;
+}
+
+.content {
+  border-radius: 2vw;
+  width: 100%;
+  padding: 2vh 4vw;
+  background-color: rgba(240, 255, 255, 0.6);
+  font-family: "Rubik";
+  font-size: 1.15rem;
+  margin-top: 2vh;
+}
+
+.content, .title {
+  backdrop-filter: blur(3px);
+  color: rgb(60, 60, 59);
+}
+
+.title {
+  font-family: "Rubik-Bold";
+  font-size: 1.5rem;
+  padding: 1.5vh 4vw;
+}
+
+.bold {
+  font-family: "Rubik-Bold";
+}
+
+.second-title {
+  font-size: 1.3rem;
+}
+
+.third-title {
+  font-size: 1.1rem;
+}
+
+.scape {
+  height: 1vh;
+  width: 100%;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.big-font {
+  font-size: 1.6rem;
+}
+
+.bigger-font {
+  font-size: 3rem;
+}
+
+.disabled {
+  filter: brightness(70%);
+}
+
+/* tables */
+
+table {
+  position: relative;
+  margin: auto;
+  width: 95vw;
+}
+
+td {
+  background-color: white;
+  border-radius: 8px;
+}
+
+.first-row {
+  text-align: center;
+  background-color: rgb(253, 246, 142);
+}
+
+.first-column {
+  background-color: rgb(138, 238, 245);
+}
+.first-row.first-column {
+  background-color: transparent;
+}
+
+/* controls */
+#controls {
+  position: fixed;
+  bottom: 0;
+  height: 18.5vw;
+  width: 100%;
+  background-color: rgba(240, 255, 255, 0.5);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  z-index: 1;
+}
+
+.control-button {
+   width: 10vw;
+   margin-right: 1vw;
+   margin-left: 1vw;
+ }
+
+ .prev {
+  transform: rotate(180deg);
+ }
+
+ #lesson-map .container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  height: 90%;
+  width: 70vw;
+  margin-right: 4vw;
+  margin-top: 0vw;
+ }
+
+ #lesson-map .topic {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: stretch; */
+  justify-content: center;
+  /* width: 30%; */
+  /* height: 100%; */
+  /* margin-top: 0vw; */
+ }
+
+.lesson-map-target {
+  width: 65%;
+  /* margin-top: 2vw; */
+  /* margin-bottom: -0.2vh; */
+}
+
+.topic-text {
+  width: 94%;
+  margin-top: -12vw;
+  margin-right: 1vw;
+  /* text-align: center; */
+  /* font-family: "Rubik-Bold"; */
+  /* font-size: 6rem; */
+  /* fill: rgb(60, 60, 59); */
+  /* letter-spacing: -5px; */
+}
+
+#controls svg {
+  width: 17vw;
+  z-index: -1;
+  margin-top: -22vw;
+  position: relative;
+  left: 2.3vw;
+}
+
+#topic-1 svg, #topic-3 svg {
+  transform: rotate(84deg);
+}
+
+#topic-2 svg {
+  transform: rotate(125deg);
+}
+
+#topic-4 svg {
+  transform: rotate(138deg);
+}
+
+svg textPath {
+  direction: ltr;
+}
+
+/* opening game */
+/* general */
+.arrows-structure {
+  position: fixed;
+  top: 36vw;
+  width: 90%;
+  margin: 5% auto;
+  left: 0;
+  right: 0;
+}
+
+/* pages 0-2 */
+.drag-arrow {
+  position: relative;
+  width: 19vw;
+  z-index: 2;
+  padding: 13px;
+}
+
+#opening-game .drag-arrow, #opening-game-explanation .drag-arrow {
+  left: -2vw;
+  top: 36.3vw;
+}
+
+#opening-game .drag-arrow{
+  filter: drop-shadow(0 0 1.25vw rgb(27, 99, 255));
+}
+
+#opening-game-question .drag-arrow {
+  top: 45vw;
+  left: -67vw;
+}
+
+.drop-grass {
+  position: fixed;
+  width: 19vw;
+  z-index: 1;
+  right: 70vw;
+  top: 47.5vw;
+}
+
+#general-opening-game .speech-bubble {
+  position: fixed;
+  z-index: 2;
+  bottom: 0;
+  width: 62vw;
+  height: 20vh;
+  left: 0;
+  padding: 4vw;
+  padding-top: 10vw;
+  background-image: url(assets/media/bubble.svg);
+}
+
+/* for the container of jquery animation */
+#opening-game .container {
+  height: 50vh;
+}
+
+#arrows-numbers {
+  position: fixed;
+  top: 2rem;
+  width: 100%;
+  height: 10%;
+  color: white;
+  direction: ltr;
+  font-family: "nehama";
+  text-align: center;
+  font-size: 38vw;
+}
+
+/* pages 3*/
+
+#opening-game-conclusion .speech-bubble {
+  height: 35vmax;
+  padding-top: 10vw;
+}
+
+#opening-game-conclusion .speech-bubble span {
+  color: rgb(227, 2, 15);
+}
+
+/* opening */
+#opening {
+  height: 180vmin;
+}
+
+#opening .container {
+  background-image: url("assets/media/2פתיחה/bg_open.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+}
+
+#play {
+  height: 64vh;
+  left: 100vw;
+  bottom: -1vh;
+}
+
+#about-button {
+  position: fixed;
+  width: 28vw;
+  margin: 2vh 2vw;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 3;
+}
+
+/* about */
+.logo {
+  width: 10vw;
+  margin: 0 1vw;
+}
+
+#about .speech-bubble div, #lesson-plan-opening .speech-bubble div{
+  width: 100%;
+  text-align: center;
+}
+
+#about .speech-bubble div {
+  font-size: 15vw;
+}
+
+#about .speech-bubble, #lesson-plan-opening .speech-bubble, #ending .speech-bubble {
+  min-height: 20rem;
+  height: 47vh;
+}
+
+#lesson-plan-opening .robin-hod {
+  height: 42vh;
+  right: -17.5vw;
+  bottom: -6vw;
+}
+
+/* lesson-goals */
+#lesson-goals .robin-hod, #order-rules .robin-hod, #goals-example .robin-hod, #running-page .robin-hod{
+  height: 38vh;
+  right: -10vw;
+  bottom: -5vw;
+}
+
+#lesson-goals .speech-bubble, #order-rules .speech-bubble,  #running-page .speech-bubble {
+  position: fixed;
+  z-index: 2;
+  bottom: 18.5vw;
+  width: 55vw;
+  height: 16vw;
+  left: 0;
+  padding-right: 8vw;
+  padding-left: 2vw;
+  padding-top: 5vw;
+  background-image: url(assets/media/bubble_small.svg);
+}
+
+#lesson-goals .title, #goals-example .title {
+  background-color: rgba(240, 255, 255, 0.6);
+}
+
+#lesson-goals .content, #assessment .content, #rules .content, #order-rules .content, #goals-example .content, #running-page .content {
+  min-height: 60vh;
+}
+
+#lesson-goals span, #goals-example span {
+  margin-left: 1.5vw;
+}
+
+/* assesment */
+#assessment .speech-bubble, #rules .speech-bubble, #texonomy .speech-bubble {
+  position: fixed;
+  z-index: 2;
+  width: 89vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2vh 6vw;
+  background-image: url(assets/media/3הערכת\ מצב/bubble_arrowhead_big.svg);
+}
+
+#assessment .speech-bubble {
+  top: 46%;
+  height: 24vh;
+  /* z-index: 1; */
+}
+
+#assessment .title {
+  background-color: rgba(81, 252, 252, 0.6);
+}
+
+#arrow-head {
+  position: fixed;
+  bottom: -7vw;
+  width: 79vw;
+  right: 0;
+  z-index: 2;
+}
+
+.triangle {
+  position: fixed;
+  z-index: 2;
+  opacity: 0;
+}
+
+#assessment .triangle {
+  width: 80vw;
+}
+
+.click-triangle {
+  background-color: transparent;
+  position: fixed;
+  z-index: 3;
+}
+
+#assessment .click-triangle {
+  width: 16vw;
+  height: 17vw;
+}
+
+#assessment .triangle-1 {
+  bottom: -8vw;
+  right: -0.8vw;
+}
+
+#assessment .triangle-2 {
+  bottom: -7.6vw;
+  right: -0.5vw;
+}
+
+#assessment .triangle-3 {
+  bottom: -7.6vw;
+  right: -1vw;
+}
+
+#assessment #click-triangle-1 {
+  bottom: 50vw;
+  right: 29vw;
+  right: 39vw;
+}
+
+#assessment #click-triangle-2 {
+  bottom: 34vw;
+  right: 29vw;
+}
+
+#assessment #click-triangle-3 {
+  bottom: 34vw;
+  right: 29vw;
+  right: 49vw;
+}
+
+/* importance */
+
+#importance .speech-bubble {
+  position: relative;
+  z-index: 2;
+  width: 63vw;
+  height: 4vh;
+  margin: auto;
+  margin-top: 1vh;
+  padding: 7vh 0vw;
+  padding-right: 27vw;
+  background-image: url(assets/media/bubble_robin.svg);
+}
+
+#importance .title {
+  background-color: rgba(252, 158, 81, 0.6);
+}
+
+#importance .content {
+  min-height: 45vh;
+}
+
+.flex-bullet {
+  display: flex;
+  width: 75vw;
+  align-items: flex-start;
+  margin-top: 1vh;
+}
+
+.little-bullet {
+  width: 7vw;
+  margin-left: 2vw;
+}
+
+/* types */
+#types table {
+  top: 4vh;
+}
+
+#types td {
+    padding: 2vw 2vh;
+}
+
+#types .first-column {
+  width: 0%;
+}
+
+#types .second-column {
+  width: 40%;
+}
+
+#types .third-column {
+  width: 60%;
+}
+
+#types .title {
+  background-color: rgba(252, 81, 252, 0.6);
+}
+
+/* #types td {
+  background-color: white;
+  padding: 3vw 3vh;
+  border-radius: 8px;
+} */
+
+/* texonomy */
+
+#texonomy .speech-bubble {
+  margin-top: 22vw;
+  height: 17vh;
+}
+
+#blum {
+  position: fixed;
+  bottom: -34vw;
+  width: 106vw;
+  right: -13vw;
+  z-index: 2;
+}
+
+
+#texonomy .click-triangle {
+  height: 7vw;
+}
+
+#texonomy .triangle-1 {
+  bottom: 31vw;
+  right: 18.5vw;
+  width: 61.8vw;
+}
+
+#texonomy .triangle-2 {
+  bottom: 37.8vw;
+  right: 22.9vw;
+  width: 53vw;
+}
+
+#texonomy .triangle-3 {
+  bottom: 44.5vw;
+  right: 26.9vw;
+  width: 45vw;
+}
+
+#texonomy .triangle-4 {
+  bottom: 51.2vw;
+  right: 31.5vw;
+  width: 36vw;
+}
+
+#texonomy .triangle-5 {
+  bottom: 58vw;
+  right: 35.5vw;
+  width: 28vw;
+}
+
+#texonomy .triangle-6 {
+  bottom: 64.6vw;
+  right: 39.95vw;
+  width: 19vw;
+}
+
+#texonomy #click-triangle-1 {
+  bottom: 31vw;
+  right: 23vw;
+  width: 53vw;
+}
+
+#texonomy #click-triangle-2 {
+  bottom: 37vw;
+  right: 27vw;
+  width: 45vw;
+}
+
+#texonomy #click-triangle-3 {
+  bottom: 44vw;
+  right: 31vw;
+  width: 36vw;
+}
+
+#texonomy #click-triangle-4 {
+  bottom: 51vw;
+  right: 36vw;
+  width: 27vw;
+}
+
+#texonomy #click-triangle-5 {
+  bottom: 58vw;
+  right: 39vw;
+  width: 20vw;
+}
+
+#texonomy #click-triangle-6 {
+  bottom: 65vw;
+  right: 42vw;
+  width: 14vw;
+  height: 12vw;
+}
+
+/* rules */
+
+#rules .title, #texonomy .title{
+  background-color: rgba(81, 121, 252, 0.6);
+}
+
+#rules .speech-bubble {
+  margin-top: 17vw;
+  height: 14vh;
+}
+
+/* bow-exer */
+
+#bows-container {
+  background-color: rgba(240, 255, 255, 0.6);
+  backdrop-filter: blur(3px);
+  width: 100vw;
+  height: 35vh;
+}
+
+.bow-flex {
+  display: none;
+  opacity: 0;
+  height: 77%;
+  width: 100%;
+}
+
+.bow {
+  display: block;
+  position: relative;
+  margin: auto;
+  height: 100%;
+  top: 1vh;
+}
+
+#bow-1 {
+  display: block;
+  opacity: 1;
+}
+
+.bow-drop {
+  position: fixed;
+  display: block;
+  width: 90vw;
+  background-color: transparent;
+  height: 19vh;
+  margin: auto;
+  left: 0;
+  right: 0;
+  /* top: 5vh; */
+  z-index: 1;
+  margin-top: -22vh;
+}
+
+.exer-controls {
+  margin: auto;
+  position: relative;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1vh;
+}
+
+#bow-controls {
+  width: 100%;
+}
+
+#bow-title {
+  width: 54vw;
+  background-color: white;
+  border-radius: 2vw;
+  padding: 1vw;
+  text-align: center;
+}
+
+#arrows-container, #quiver-container, #lesson-container {
+  width: 100vw;
+  position: fixed;
+}
+
+#arrows-container {
+  bottom: 0;
+}
+
+.arrow {
+  display: block;
+  position: relative;
+  width: 46vh;
+  max-width: 90vw;
+  margin: auto;
+}
+
+#bow-exer .arrow {
+  margin-bottom: 0.5vh;
+  margin-top: 0.5vh;
+}
+
+/* quiver */
+
+#quiver {
+  width: 70%;
+  left: 0;
+  position: fixed;
+}
+
+#quiver-flex {
+  width: 100vw;
+  height: 55vh;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-evenly;
+  background-image: url("assets/media/7תרגול סידור/order_mat.svg");
+  background-repeat: no-repeat;
+}
+
+.quiver-drop {
+  display: block;
+  width: 90vw;
+  background-color: transparent;
+  height: 11vh;
+}
+
+#quiver-controls, #lesson-controls {
+  width: 50%;
+}
+
+#quiver-exer .arrow {
+  display: none;
+  right: 0;
+  position: fixed;
+  bottom: 1vw;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+#quiver-exer #quiver-arrow-1 {
+  display: block;
+}
+
+#quiver-exer #quiver-arrow-3 {
+  bottom: 4vw;
+}
+
+/* #quiver-arrow-flex {
+  height: 4rem;
+  display: flex;
+} */
+#quiver-container {
+  bottom: 17vw;
+}
+
+/* dropdown exer */
+
+.ui-button:active .ui-icon, .ui-button:hover .ui-icon, .ui-button:focus .ui-icon, .ui-icon, .ui-button .ui-icon {
+  background-image: none;
+}
+
+.ui-button .ui-icon {
+  display: none;
+}
+
+.ui-selectmenu-button.ui-button {
+  text-align: right;
+  white-space: nowrap;
+  width: 6rem;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+.ui-corner-all {
+  border-radius: 3vw;
+}
+
+.ui-button {
+  padding: 0.1em;
+}
+
+.ui-selectmenu-text {
+  margin-right: 1vw;
+}
+
+.ui-corner-top {
+  border-top-right-radius: 3vw;
+  border-top-left-radius: 3vw;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus, .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  border: 0.15rem solid white;
+  background: white;
+}
+
+.ui-widget {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-size: 1.05rem;
+}
+
+*:focus {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  background: white;
+  color: white;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  border: 0.15rem solid transparent;
+  background: rgb(218, 218, 218);
+  color: white;
+}
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
+  color: #454545;
+}
+
+.ui-widget.ui-widget-content {
+  border: none;
+}
+
+#check {
+  display: none;
+  height: 10vw;
+}
+
+.ui-menu .ui-menu-item-wrapper {
+  position: relative;
+  padding: 0.2em;
+}
+
+/* lesson's parts roles exer */
+
+.lesson-flex {
+  width: 100vw;
+  height: 19vh;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: flex-start; */
+  align-content: space-evenly;
+  background-repeat: no-repeat;
+  margin-bottom: 0.5vh;
+}
+
+#lesson-flex-1 {
+  background-image: url("assets/media/9תרגול חלקי שיעור/matara_open.svg");
+}
+
+#lesson-flex-2 {
+  background-image: url("assets/media/9תרגול חלקי שיעור/matara_body.svg");
+}
+
+#lesson-flex-3 {
+  background-image: url("assets/media/9תרגול חלקי שיעור/matara_sum.svg");
+}
+
+#lesson-exer .arrow {
+  display: none;
+  right: 0;
+  position: fixed;
+  bottom: 1vw;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+#lesson-exer #lesson-arrow-1 {
+  display: block;
+}
+
+.lesson-drop {
+  display: block;
+  width: 100vw;
+  background-color: transparent;
+  height: 16vh;
+  position: relative;
+  left: 0vw;
+}
+
+#lesson-container {
+  bottom: 13vw;
+}
+
+/* table example */
+
+#table-example table {
+  top: 7vh;
+}
+
+#table-example .column {
+  width: 0%;
+}
+
+#table-example .title, #table-explaining .title, #lesson-plan-example .title {
+  background-color: rgb(138, 238, 245, 0.6);
+}
+
+#table-example td {
+  padding: 3vw 2vh;
+}
+
+/* table exercise */
+
+table {
+  width: 90vw;
+  margin-top: 2vh;
+}
+
+#table-controls {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 90vw;
+  justify-content: space-between;
+  margin:auto;
+}
+
+.table-button {
+  background-color: rgb(138, 238, 245);
+  border-radius: 8px;
+  color: rgb(4, 4, 8); 
+  padding: 1vh 4vw;
+  margin-top: 6vh;
+}
+
+#table-explaining .selected {
+  background-color: rgb(4, 4, 8);
+  color: rgb(138, 238, 245);
+}
+
+#table-explaining .first-row  {
+  background-color: rgb(222, 224, 224);
+}
+
+#table-explaining td {
+  padding: 1vh 3vw;
+  font-size: 4vw;
+}
+
+#time {
+  height: 15vw;
+}
+
+#content {
+  height: 43vw;
+}
+
+
+/* lesson plan example */
+
+.scroll {
+  height: 90vw;
+  max-height: 50vh;
+  overflow-y: scroll;
+  border-radius: 8px;
+  width: 90vw;
+  margin: auto;
+  position: relative;
+  margin-top: 6vh;
+}
+
+.scroll table {
+  margin-top: 0;
+}
+
+#lesson-plan-example td {
+  padding: 1vh 3vw;
+}
+
+/* running page */
+
+#running-page .title{
+  background-color: rgba(252, 81, 146, 0.6);
+}
+
+#running-page .speech-bubble {
+  height: 19vw;
+  padding-top: 2vw;
+}
+
+/* american questions */
+.american-question .speech-bubble {
+  bottom: -5vw;
+  position: fixed;
+  z-index: 0;
+  height: 36.5vw;
+  right: -5vw;
+  background-image: url(assets/media/bubble_fullrobin_tall.svg);
+  padding: 15vw;
+  padding-top: 2vw;
+  padding-right: 43vw;
+  display: none;
+}
+
+.question-num {
+  width: 2vw;
+  background-color: white;
+  text-align: center;
+  border-radius: 15px;
+  padding: 1vw 2vh;
+  margin-right: 4vw;
+}
+
+.american-question .title{
+  background-color: rgba(233, 123, 49, 0.6);
+}
+
+.question-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 90vw;
+  height: 70vw;
+  margin: auto;
+  top: 6vh;
+}
+
+.flex-question {
+  background-color: white;
+  border-radius: 7px;
+  border-style: solid;
+  border-width: medium;
+  border-color: transparent;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2% 2%;
+  height: 13%;
+}
+
+/* ending */
+
+#replay {
+  position: fixed;
+  z-index: 2;
+  bottom: 0;
+  height: 27vh;
+  right: 31vw;
+}

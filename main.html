@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/media/map_finish.svg">
+    <link rel="stylesheet" href="assets/JQuery/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="assets/JQuery/jquery-3.4.1.min.js"></script>
+    <script src="assets/JQuery/jquery-ui.min.js"></script>
+    <script src="assets/JQuery/jquery.ui.touch-punch.js"></script>
+    <script src="code.js"></script>
+    <script src="opening.js"></script>  
+    <script src="topic-1.js"></script> 
+    <script src="topic-2.js"></script> 
+    <script src="topic-3.js"></script>
+    <script src="test.js"></script>      
+    <title>מטרות</title>
+  </head>
+  <body>
+<div id="main">
+  <!-- opening game -->
+  <!-- general div that is used in all the opening game -->
+  <div id="general-opening-game" class="page">
+    <div class="container">
+      <img class="arrows-structure" src="assets/media/1גפרורים/math_arrows.svg">
+      <img class="robin-hod big-robin" src="assets/media/robin hood.svg">
+    </div>
+    <div class="speech-bubble"></div>
+  </div>
+  <!-- page 0 -->
+    <div id="opening-game" class="page">
+      <div class="container">
+        <img class="drag-arrow" src="assets/media/1גפרורים/blue_arrow_1.svg">
+        <img class="drop-grass" src="assets/media/1גפרורים/yellow.svg">
+      </div>
+    </div>
+  <!-- page 1 -->
+    <div id="opening-game-question" class="page">
+      <div class="container">
+        <img class="drag-arrow" src="assets/media/1גפרורים/red_arrow.svg">
+      </div>
+    </div>
+  <!-- page 2 -->
+    <div id="opening-game-explanation" class="page">
+      <div class="container">
+        <div id="arrows-numbers">110 = 7</div>
+        <img class="drag-arrow" src="assets/media/1גפרורים/red_arrow.svg">
+      </div>
+    </div>
+    <!-- page 3 -->
+    <div id="opening-game-conclusion" class="page">
+      <div class="container">
+        <div class="speech-bubble big-bubble big-font"></div>
+        <img class="robin-hod big-robin" src="assets/media/robin hood.svg">
+      </div>
+    </div>
+    <!-- opening -->
+    <!-- page 4 -->
+    <div id="opening" class="page">
+      <div class="container">
+        <img id="play" class="robin-hod" src="assets/media/2פתיחה/play.svg">
+        <img id="about-button" src="assets/media/2פתיחה/about.svg">
+      </div>
+    </div>
+    <!-- about -->
+    <!-- page 5 -->
+    <div id="about" class="page">
+        <div class="container">
+          <div class="speech-bubble big-bubble"></div>
+          <img class="robin-hod big-robin" src="assets/media/tali.svg">
+        </div>
+    </div>
+    <!-- page 6 -->
+    <div id="lesson-goals" class="page">
+      <div class="container">
+        <div class="content-flex content-flex-height">
+          <div class="title">מטרות הלומדה</div>
+          <div class="content"><div class="bold second-title">מטרת על</div>החניך יבנה מערך שיעור על פי מבנה שיעור תקין ובהתאם למטרות שהוגדרו.<div class="scape"></div><div class="bold second-title">מטרות ביניים</div><div class="flex-bullet"><span class="bold">1.</span> החניך יסביר את 6 הכללים לניסוח מטרות הדרכתיות.</div><div class="flex-bullet"><span class="bold">2.</span> החניך יסביר את המבנה העקרוני של מערך שיעור.</div></div>
+        </div>
+        <img class="robin-hod" src="assets/media/robin hood.svg">
+      </div>
+      <div class="speech-bubble"></div>
+    </div>
+    <!-- assessment -->
+    <!-- page 7 -->
+    <div id="assessment" class="page">
+      <div class="container">
+        <div class="content-flex content-flex-height">
+          <div class="title">הערכת מצב</div>
+          <div class="content">למרות שאתם חדורי מטרה לכתוב את המטרות, חשוב לכתוב קודם "הערכת מצב"- כלומר כל מה שידוע לכם מראש על השיעור.<div class="speech-bubble"></div></div>
+        </div>
+        <img id="arrow-head" class="arrow-head" src="assets/media/3הערכת מצב/arrowhead.svg">
+        <img class="triangle triangle-1" src="assets/media/3הערכת מצב/triangle_top.svg">
+        <div id="click-triangle-1" class="click-triangle change-speech-bubble"></div>
+        <img class="triangle triangle-2" src="assets/media/3הערכת מצב/triangle_right.svg">
+        <div id="click-triangle-2" class="click-triangle change-speech-bubble"></div>
+        <img class="triangle triangle-3" src="assets/media/3הערכת מצב/triangle_left.svg">
+        <div id="click-triangle-3" class="click-triangle change-speech-bubble"></div>
+      </div>
+    </div>
+    <!-- goals -->
+    <!-- page 8 -->
+     <div id="importance" class="page">
+      <div class="container">
+        <div class="speech-bubble"></div>
+        <div class="content-flex">
+          <div class="title">חשיבות המטרות</div>
+          <div class="content">
+            <div class="bold second-title">למדריך</div>
+            <div class="flex-bullet">
+              <img class="little-bullet" src="assets/media/4חשיבות המטרות/matara_bullet.svg">
+              <span><span class="bold third-title">הבחנה בין עיקר לטפל-</span> ממקדות בתכנון ובהעברת השיעור</span>
+            </div>
+            <div class="flex-bullet">
+              <img class="little-bullet" src="assets/media/4חשיבות המטרות/matara_bullet.svg">
+              <span><span class="bold third-title">כלי בקרה-</span> בסוף השיעור נחזור על המטרות כדי לבדוק שהשיעור הצליח ותוכנו היה ברור</span>
+            </div>
+            <div class="bold second-title">לחניך</div>
+            <div class="flex-bullet">
+              <img class="little-bullet" src="assets/media/4חשיבות המטרות/matara_bullet.svg">
+              <span><span class="bold third-title">יצירת ודאות-</span> החניך יודע מה נדרש ממנו ללמוד בשיעור</span>
+            </div>
+            <div class="flex-bullet">
+              <img class="little-bullet" src="assets/media/4חשיבות המטרות/matara_bullet.svg">
+              <span><span class="bold third-title">סדר הגיוני-</span> מסייע לחניך להבין את החומר באופן מסודר ולזכור אותו בצורה מיטבית</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- page 9 -->
+    <div id="types" class="page">
+    <div class="container">
+      <div class="content-flex content-flex-height">
+        <div class="title">סוגי המטרות</div>
+        <div class="content">מטרות השיעור מתחלקות לשני סוגים- מטרת על ומטרות ביניים</div>
+      </div>
+      <table>
+        <tr>
+          <td class="first-row first-column"></td>
+          <td class="first-row second-column bold third-title">מטרת על</td>
+          <td class="first-row third-column bold third-title">מטרת ביניים</td>
+        </tr>
+        <tr>
+          <td class="second-row first-column bold third-title">אפיון</td>
+          <td class="second-row second-column">התוצר הסופי של תהליך הלמידה</td>
+          <td class="second-row third-column">שלבים בדרך להשגת מטרת העל</td>
+        </tr>
+        <tr>
+          <td class="third-row first-column bold third-title">ניסוח</td>
+          <td class="third-row second-column">באופן נרחב, כללי, ולא מצביע על הדרך להשגתה</td>
+          <td class="third-row third-column">באופן ספציפי, ומציגות את תהליך הלמידה ואת הדברים אותם החניכים צריכים לעבור במהלך השיעור</td>
+        </tr>
+      </table>
+     </div>
+    </div>
+    <!-- page 10 -->
+    <div id="texonomy" class="page">
+    <div class="container">
+      <div class="content-flex content-flex-height">
+        <div class="title">כתיבת מטרות</div>
+        <div class="content"><div class="bold second-title">סדר</div>מטרות מסודרות לפי הטקסונומיה של בלום- דירוג של 6 רמות חשיבה (מהפשוטה אל המרוכבת).<div class="speech-bubble"></div></div>
+      </div>
+      <img id="blum" class="arrow-head" src="assets/media/6סדר כתיבת מטרות/blum.svg">
+      <img class="triangle triangle-1" src="assets/media/6סדר כתיבת מטרות/hover_1.svg">
+      <div id="click-triangle-1" class="click-triangle change-speech-bubble"></div>
+      <img class="triangle triangle-2" src="assets/media/6סדר כתיבת מטרות/hover_2.svg">
+      <div id="click-triangle-2" class="click-triangle change-speech-bubble"></div>
+      <img class="triangle triangle-3" src="assets/media/6סדר כתיבת מטרות/hover_3.svg">
+      <div id="click-triangle-3" class="click-triangle change-speech-bubble"></div>
+      <img class="triangle triangle-4" src="assets/media/6סדר כתיבת מטרות/hover_4.svg">
+      <div id="click-triangle-4" class="click-triangle change-speech-bubble"></div>
+      <img class="triangle triangle-5" src="assets/media/6סדר כתיבת מטרות/hover_5.svg">
+      <div id="click-triangle-5" class="click-triangle change-speech-bubble"></div>
+      <img class="triangle triangle-6" src="assets/media/6סדר כתיבת מטרות/hover_6.svg">
+      <div id="click-triangle-6" class="click-triangle change-speech-bubble"></div>
+    </div>
+  </div>
+  <!-- page 11 -->
+  <div id="quiver-exer" class="page">
+  <div class="container">
+    <div class="speech-bubble exer-speech-bubble"></div>
+    <div id="quiver-container">
+      <div id="quiver-flex">
+        <div id="quiver-drop-3" class="quiver-drop"></div>
+        <div id="quiver-drop-2" class="quiver-drop"></div>
+        <div id="quiver-drop-4" class="quiver-drop"></div>
+        <div id="quiver-drop-1" class="quiver-drop"></div>
+      </div>
+      <div id="quiver-controls" class="exer-controls">
+        <img src="assets/media/next.svg" id="prev-quiver" class="control-button prev" alt="הקודם">
+        <span id="quiver-number" class="bold">1/4</span>
+        <img src="assets/media/next.svg" id="next-quiver" class="control-button" alt="הבא">
+      </div>
+    </div>
+    <img id="quiver-arrow-3" class="arrow quiver-arrow-3" src="assets/media/7תרגול סידור/order_arrow_fixed_1.svg">
+    <img id="quiver-arrow-2" class="arrow quiver-arrow-2" src="assets/media/7תרגול סידור/order_arrow_fixed_2.svg">
+    <img id="quiver-arrow-4" class="arrow quiver-arrow-4" src="assets/media/7תרגול סידור/order_arrow_fixed_3.svg">
+    <img id="quiver-arrow-1" class="arrow quiver-arrow-1" src="assets/media/7תרגול סידור/order_arrow_fixed_4.svg">
+    </div>
+  </div>
+     <!-- page 12 -->
+     <div id="rules" class="page">
+      <div class="container">
+        <div class="content-flex content-flex-height">
+          <div class="title">כתיבת מטרות</div>
+          <div class="content">
+            <div class="bold second-title">כללי ניסוח</div>
+            <div class="flex-bullet">
+              <img id="click-target-1" class="little-bullet change-speech-bubble" src="assets/media/6סדר כתיבת מטרות/matara_1.svg">
+              <span>נסחו את המטרה כביצוע של הלומד</span>
+            </div>
+            <div class="flex-bullet">
+              <img id="click-target-2" class="little-bullet change-speech-bubble" src="assets/media/6סדר כתיבת מטרות/matara_2.svg">
+              <span>הגדירו מדד כמותי להשגת המטרה</span>
+            </div>
+            <div class="flex-bullet">
+              <img id="click-target-3" class="little-bullet change-speech-bubble" src="assets/media/6סדר כתיבת מטרות/matara_3.svg">
+              <span>הגדירו מדד איכותי להשגת המטרה</span>
+            </div>
+            <div class="flex-bullet">
+              <img id="click-target-4" class="little-bullet change-speech-bubble" src="assets/media/6סדר כתיבת מטרות/matara_4.svg">
+              <span>נסחו את הביצוע כך שיהיה ניתן למדידה ותצפית</span>
+            </div>
+            <div class="flex-bullet">
+              <img id="click-target-5" class="little-bullet change-speech-bubble" src="assets/media/6סדר כתיבת מטרות/matara_5.svg">
+              <span>הגדירו את תוצר הלמידה ולא את עצם הלמידה</span>
+            </div>
+            <div class="flex-bullet">
+              <img id="click-target-6" class="little-bullet change-speech-bubble" src="assets/media/6סדר כתיבת מטרות/matara_6.svg">
+              <span>הפרידו בין רמות החשיבה</span>
+            </div>
+            <div class="speech-bubble"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- page 13 -->
+     <div id="bow-exer" class="page">
+      <div class="container">
+        <div class="speech-bubble exer-speech-bubble"></div>
+       <div id="arrows-container">
+          <div id="bows-container">
+            <div id="bow-1" class="bow-flex">
+              <img class="bow" src="assets/media/5תרגול מטרות/nisuah_bow1.svg">
+              <div id ="bow-drop-1" class="bow-drop"></div>
+            </div>
+            <div id="bow-2" class="bow-flex">
+              <img class="bow" src="assets/media/5תרגול מטרות/nisuah_bow2.svg">
+              <div id ="bow-drop-2" class="bow-drop"></div>
+            </div>
+            <div id="bow-3" class="bow-flex">
+              <img class="bow" src="assets/media/5תרגול מטרות/nisuah_bow3.svg">
+              <div id ="bow-drop-3" class="bow-drop"></div>
+            </div>
+            <div id="bow-4" class="bow-flex">
+              <img class="bow" src="assets/media/5תרגול מטרות/nisuah_bow4.svg">
+              <div id ="bow-drop-4" class="bow-drop"></div>
+            </div>
+            <div id="bow-5" class="bow-flex">
+              <img class="bow" src="assets/media/5תרגול מטרות/nisuah_bow5.svg">
+              <div id ="bow-drop-5" class="bow-drop"></div>
+            </div>
+            <div id="bow-6" class="bow-flex">
+              <img class="bow" src="assets/media/5תרגול מטרות/nisuah_bow6.svg">
+              <div id ="bow-drop-6" class="bow-drop"></div>
+            </div>
+            
+            <div id="bow-controls" class="exer-controls">
+              <img src="assets/media/next.svg" id="prev-bow" class="control-button prev" alt="הקודם">
+              <span id="bow-number" class="bold">1/6</span>
+              <span id="bow-title" class="bold">לא מנוסחות כביצוע של הלומד</span>
+              <img src="assets/media/next.svg" id="next-bow" class="control-button" alt="הבא">
+            </div>
+          </div>
+          <img id="bow-arrow-6" class="arrow bow-arrow-6" src="assets/media/5תרגול מטרות/nisuah_arrow4.svg">
+          <img id="bow-arrow-2" class="arrow bow-arrow-2" src="assets/media/5תרגול מטרות/nisuah_fixed_arrow1.svg">
+          <img id="bow-arrow-5" class="arrow bow-arrow-5" src="assets/media/5תרגול מטרות/nisuah_fixed_arrow2.svg">
+          <img id="bow-arrow-1" class="arrow bow-arrow-1" src="assets/media/5תרגול מטרות/nisuah_arrow1.svg">
+       </div>
+      </div>
+    </div>
+    <!-- page 14 -->
+    <div id="goals-example" class="page">
+      <div class="container">
+        <div class="content-flex content-flex-height">
+          <div class="title">דוגמה לכתיבת מטרות</div>
+          <div class="content">
+            <div class="bold second-title">מטרת על</div>החניכה תפתח את תפיסת "הכפר השלם" כחלק מהבנת שותפי תפקיד.<div class="scape"></div><div class="bold second-title">מטרות ביניים</div><div class="flex-bullet"><span class="bold">1.</span> החניכה תזהה את צרכי החייל.</div><div class="flex-bullet"><span class="bold">2.</span> החניכה תפיק משמעויות ביחס לשותפיה מתוך צרכי החייל.</div><div class="flex-bullet"><span class="bold">3.</span> החניכה תעבד את משמעות העבודה המשותפת ביחס לתפקידה.</div></div>
+        </div>
+        <img class="robin-hod" src="assets/media/robin hood.svg">
+      </div>
+    </div>
+    <!-- page 15 -->
+    <div id="dropdown-exer" class="page">
+      <div class="container">
+        <div class="speech-bubble exer-speech-bubble"></div>
+        <div class="content-flex">
+          <div class="content">
+            <form action="#">
+                <select name="drop-down-1" id="drop-down-1">
+                  <option selected="selected">בחר/י...</option>
+                  <option>מטרת העל</option>
+                  <option>מטרות ביניים</option>
+                </select>
+                <label for="drop-down-1">: החניך יחבוש פצוע על פי עקרונות החבישה.</label>
+                <div class="scape"></div>
+                <div class="scape"></div>
+                <select name="drop-down-2" id="drop-down-2">
+                  <option selected="selected">בחר/י...</option>
+                  <option>מטרת העל</option>
+                  <option>מטרות ביניים</option>
+                </select>
+                <label for="drop-down-2">:</label>
+                <div class="scape"></div>
+                <label for="drop-down-3"><span class="bold">1.</span> ה</label>
+                <select name="drop-down-3" id="drop-down-3">
+                  <option selected="selected">בחר/י...</option>
+                  <option>חייל</option>
+                  <option>חניך</option>
+                  <option>מפקד</option>
+                </select>
+                <select name="drop-down-4" id="drop-down-4">
+                  <option selected="selected">בחר/י...</option>
+                  <option>ילמד</option>
+                  <option>יסביר</option>
+                  <option>יתרגל</option>
+                  <option>ינסח</option>
+                </select>
+                <label for="drop-down-4">את עקרונות החבישה.</label>
+                <div class="scape"></div>
+                <label for="drop-down-5"><span class="bold">2.</span> ה</label>
+                <select name="drop-down-5" id="drop-down-5">
+                  <option selected="selected">בחר/י...</option>
+                  <option>חייל</option>
+                  <option>חניך</option>
+                  <option>מפקד</option>
+                </select>
+                <label for="drop-down-5">יחבוש</label>
+                <select name="drop-down-6" id="drop-down-6">
+                  <option selected="selected">בחר/י...</option>
+                  <option>כמות</option>
+                  <option>מספר</option>
+                  <option>3</option>
+                  <option>מגוון</option>
+                </select>
+                <label for="drop-down-6">חבישות שונות.</label>
+                <div class="scape"></div>
+                <label for="drop-down-7"><span class="bold">3.</span> החייל</label>
+                <select name="drop-down-7" id="drop-down-7">
+                  <option selected="selected">בחר/י...</option>
+                  <option>יחבוש</option>
+                  <option>ידע לחבוש</option>
+                  <option>יתרגל חבישה</option>
+                </select>
+                <label for="drop-down-7">בתרגיל שמדמה מצב אמת.</label>
+            </form>  
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- lesson plan -->
+      <!-- page 16 -->
+    <div id="lesson-plan-opening" class="page">
+      <div class="container">
+        <div class="speech-bubble big-bubble bigger-font"></div>
+        <img class="robin-hod" src="assets/media/robin hood.svg">
+      </div>
+    </div>
+     <!-- page 17 -->
+     <div id="lesson-exer" class="page">
+      <div class="container">
+        <div class="speech-bubble exer-speech-bubble"></div>
+        <div id="lesson-container">
+          <div id="lesson-flex-1" class="lesson-flex">
+            <div id="lesson-drop-1" class="lesson-drop lesson-drop-1"></div>
+          </div>
+          <div id="lesson-flex-2" class="lesson-flex">
+            <div id="lesson-drop-2" class="lesson-drop lesson-drop-2"></div>
+          </div>
+          <div id="lesson-flex-3" class="lesson-flex">
+            <div id="lesson-drop-3" class="lesson-drop lesson-drop-3"></div>
+          </div>
+          <div id="lesson-controls" class="exer-controls">
+            <img src="assets/media/next.svg" id="prev-lesson" class="control-button prev" alt="הקודם">
+            <span id="lesson-number" class="bold">1/7</span>
+            <img src="assets/media/next.svg" id="next-lesson" class="control-button" alt="הבא">
+          </div>
+        </div>
+            <img id="lesson-arrow-1" class="arrow lesson-arrow-1" src="assets/media/9תרגול חלקי שיעור/parts_arrow_1.svg">
+            <img id="lesson-arrow-2" class="arrow lesson-arrow-2" src="assets/media/9תרגול חלקי שיעור/parts_arrow_2.svg">
+            <img id="lesson-arrow-3" class="arrow lesson-arrow-1" src="assets/media/9תרגול חלקי שיעור/parts_arrow_3.svg">
+            <img id="lesson-arrow-4" class="arrow lesson-arrow-1" src="assets/media/9תרגול חלקי שיעור/parts_arrow_4.svg">
+            <img id="lesson-arrow-5" class="arrow lesson-arrow-3" src="assets/media/9תרגול חלקי שיעור/parts_arrow_5.svg">
+            <img id="lesson-arrow-6" class="arrow lesson-arrow-3" src="assets/media/9תרגול חלקי שיעור/parts_arrow_6.svg">
+            <img id="lesson-arrow-7" class="arrow lesson-arrow-2" src="assets/media/9תרגול חלקי שיעור/parts_arrow_7.svg">
+        </div>
+      </div>
+    <!-- page 18 -->
+    <div id="table-example" class="page">
+      <div class="container">
+        <div class="content-flex content-flex-height">
+          <div class="title">כתיבת מערך שיעור</div>
+          <div class="content">את מערך השיעור נכתוב בטבלה הבאה:</div>
+        </div>
+        <table>
+          <tr>
+            <td class="first-row column first-column"></td>
+            <td class="first-row column"><div class="bold third-title">זמן</div>(כמה זמן לוקח כל חלק?)</td>
+            <td class="first-row column"><div class="bold third-title">תוכן</div>(מה בעצם קורה כאן?)</td>
+            <td class="first-row column"><div class="bold third-title">עזרים</div>(מה דרוש לי לשיעור?)</td>
+          </tr>
+          <tr>
+            <td class="row column first-column bold third-title">פתיחה</td>
+            <td class="row column"></td>
+            <td class="row column"></td>
+            <td class="row column"></td>
+          </tr>
+          <tr>
+            <td class="row column first-column bold third-title">גוף</td>
+            <td class="row column"></td>
+            <td class="row column"></td>
+            <td class="row column"></td>
+          </tr>
+          <tr>
+            <td class="row column first-column bold third-title">סיכום</td>
+            <td class="row column"></td>
+            <td class="row column"></td>
+            <td class="row column"></td>
+          </tr>
+        </table>
+       </div>
+      </div>
+
+      <!-- page 19 -->
+    <div id="table-explaining" class="page">
+      <div class="container">
+        <div class="content-flex content-flex-height">
+          <div class="title">כתיבת מערך שיעור</div>
+          <div class="content">לחצו על הכפתורים לשינוי תוכן הטבלה.</div>
+        </div>
+        <div id="table-controls">
+          <div id="table-button-1" class="table-button bold third-title selected">פתיחה</div>
+          <div id="table-button-2" class="table-button bold third-title">גוף</div>
+          <div id="table-button-3" class="table-button bold third-title">סיכום</div>
+        </div>
+        <table>
+          <tr>
+            <td class="row column first-row bold third-title">זמן</td>
+            <td id="time" class="row column">הפתיחה אמורה להיות קצרה ולהימשך כ-5-10 דקות.</td>
+          </tr>
+          <tr>
+            <td class="row column first-row bold third-title">תוכן</td>
+            <td id="content" class="row column">פתיחה מורכבת מחלק/כל הסעיפים הבאים:<div class="scape"></div>הצגת הנושאים ומטרות השיעור (למשל באמצעות ניהול דיון/משחק לעירור עניין).<div class="scape"></div>המחשת/הדגמת הצורך בחומר הנלמד (על מנת לעורר עניין בשיעור).<div class="scape"></div>קישור לנושאים קודמים שנלמדו (על מנת ליצור רצף הגיוני לחניכים).</td>
+          </tr>
+          <tr>
+            <td class="row column first-row bold third-title">עזרים</td>
+            <td id="accessories" class="row column">אתם יכולים להביא לשיעור עזרים חזותיים או ציוד לפעילויות שתעשו במהלך השיעור (בריסטולים, עטים, לוח מחיק וכו').</td>
+          </tr>
+        </table>
+       </div>
+      </div>
+
+     <!-- page 20 -->
+    <div id="lesson-plan-example" class="page">
+      <div class="container">
+        <div class="content-flex content-flex-height">
+          <div class="title">מערך שיעור לדוגמה</div>
+          <div class="content">גללו למטה את הטבלה כדי לראות את כל מערך השיעור.</div>
+        </div>
+        <div class="scroll">
+        <table>
+          <tr>
+            <td class="first-row column"><div class="bold third-title">זמן</div></td>
+            <td class="first-row column"><div class="bold third-title">תוכן</div></td>
+            <td class="first-row column"><div class="bold third-title">עזרים</div></td>
+          </tr>
+          <tr>
+            <td class="row column text-align"><div class="bold third-title">פתיחה</div><div class="scape"></div>10 דקות</td>
+            <td class="row column">חלקו את הצוות ל-2 קבוצות. לכל קבוצה תנו דף עם מילה- קבוצה אחת מקבלת את המילה "טוהר" והשנייה "נשק". על כל קבוצה לכתוב כמה שיותר אסוציאציות שעולות להן מהמילה הכתובה. לאחר מכן על כל קבוצה להציג את האסוציאציות שהם כתבו ועל הקבוצה השנייה לנחש את המילה שהם קיבלו.</td>
+            <td class="row column">דף עם המילה "טוהר" + דף עם המילה "נשק"</td>
+          </tr>
+          <tr>
+            <td class="row column" text-align><div class="bold third-title">גוף</div><div class="scape"></div>30 דקות</td>
+            <td class="row column">הקריאו את ערך "טוהר הנשק" מתוך רו"ח צה"ל.<br><b>שאלו:</b><br>1. מה ההגדרה של "במידה הנדרשת" ושל "כל שביכולתו"?<br>2. איפה עובר הגבול? מי קובע אותו?<div class="scape"></div>הקריאו את ערך "דבקות המטרה וחתירה לניצחון".<br><b>שאלו:</b><br>1. האם הערכים הללו מתנגשים?<br>2. האם טוהר הנשק מחליש אותנו כצבא?<div class="scape"></div>הקריאו את 2 הבתים הראשונים בשיר "גנרל".<br><b>שאלו:</b><br>1. מה הוא אומר בקטע?<br>2. האם זה חיסרון שמכונות זקוקות לאדם- לא רצוי שמכונה תפעיל את עצמה?<div class="scape"></div>הקריאו את בית 3.<br><b>שאלו:</b><br>1. למה היכולת לחשוב היא חיסרון?<br>2. למה נותנים בידי חייל (נער בן 18-21) אחריות כזאת- להילחם במלחמה?<br>3. מה האחריות שנותנים לחחיל מייצרת?</td>
+            <td class="row column text-align">נספח א'</td>
+          </tr>
+          <tr>
+            <td class="row column text-align"><div class="bold third-title">סיכום</div><div class="scape"></div>5 דקות</td>
+            <td class="row column">הקריאו טקסט של יגאל אלון.<br><b>סכמו:</b><br>יש לנו סמכות כחיילים בצבא להחזיק נשק ולהיות ערוכים לקרב, אך בד בבד יש לנו אחריות לשמור על ערכיות ואנושיות בשיח ובמערכה.</td>
+            <td class="row column text-align">נספח ב'</td>
+          </tr>
+        </table>
+       </div>
+      </div>
+    </div>
+
+     <!-- page 21 -->
+     <div id="running-page" class="page">
+      <div class="container">
+        <div class="content-flex content-flex-height">
+          <div class="title">דף רץ</div>
+          <div class="content">דף רץ הוא דף בו מתואר השיעור באופן תמציתי, על מנת שתכולו להיזכר ברצף השיעור במהלכו במידת הצורך.<div class="scape"></div>דף רץ כתוב לפי נוחות אישית ואין חובה להשתמש בו (מומלץ להשתמש בדף קטן).</div>
+        </div>
+        <img class="robin-hod" src="assets/media/robin hood.svg">
+      </div>
+      <div class="speech-bubble"></div>
+    </div>
+
+    <!-- page 22 -->
+    <div id="american-question-1" class="american-question page">
+    <div class="container">
+      <div class="content-flex content-flex-height">
+        <div class="title">תרגול מסכם<span class="question-num bold third-title">1/5</span></div>
+        <div class="content">מה אינו שלב הכרחי בכתיבת השיעור?</div>
+      </div>
+      <div class="question-container">
+        <div class="flex-question ans-1">
+          <img class="little-bullet" src="assets/media/10תרגול מסכם/americ.svg">
+          <span>הערכת מצב</span>
+        </div>
+        <div class="flex-question ans-2">
+          <img class="little-bullet" src="assets/media/10תרגול מסכם/americ.svg">
+          <span>מטרות</span>
+        </div>
+        <div class="flex-question ans-3">
+          <img class="little-bullet" src="assets/media/10תרגול מסכם/americ.svg">
+          <span>מערך שיעור</span>
+        </div>
+        <div class="flex-question ans-4">
+          <img class="little-bullet" src="assets/media/10תרגול מסכם/americ.svg">
+          <span>דף רץ</span>
+        </div>
+      </div>
+    </div>
+    <div class="speech-bubble"></div>
+  </div>
+
+  <!-- page 23 -->
+  <div id="american-question-2" class="american-question page">
+    <div class="container">
+      <div class="content-flex content-flex-height">
+        <div class="title">תרגול מסכם<span class="question-num bold third-title">2/5</span></div>
+        <div class="content">ראשי התיבות של משולש לח"מ הם:</div>
+      </div>
+      <div class="question-container">
+        <div class="flex-question ans-1">
+          <img class="little-bullet" src="assets/media/10תרגול מסכם/americ.svg">
+          <span>לימוד, חומר, מערכת</span>
+        </div>
+        <div class="flex-question ans-2">
+          <img class="little-bullet" src="assets/media/10תרגול מסכם/americ.svg">
+          <span>לימוד, חוזקות, מידע</span>
+        </div>
+        <div class="flex-question ans-3">
+          <img class="little-bullet" src="assets/media/10תרגול מסכם/americ.svg">
+          <span>לומד, חומר, מלמד</span>
+        </div>
+        <div class="flex-question ans-4">
+          <img class="little-bullet" src="assets/media/10תרגול מסכם/americ.svg">
+          <span>לוחם חוד משובח</span>
+        </div>
+      </div>
+    </div>
+    <div class="speech-bubble"></div>
+  </div>
+
+  <!-- page 24 -->
+  <div id="american-question-3" class="american-question page">
+    <div class="container">
+      <div class="content-flex content-flex-height">
+        <div class="title">תרגול מסכם<span class="question-num bold third-title">3/5</span></div>
+        <div class="content">מה מבין האופציות הבאות היא <span class="bold">לא</span> כלל לניסוח מטרה?</div>
+      </div>
+      <div class="question-container">
+        <div class="flex-question ans-1">
+          <img class="little-bullet" src="assets/media/10תרגול מסכם/americ.svg">
+          <span>מטרה תתמקד בפעולות המדריך</span>
+        </div>
+        <div class="flex-question ans-2">
+          <img class="little-bullet" src="assets/media/10תרגול מסכם/americ.svg">
+          <span>מטרה תגדיר מדד איכותי</span>
+        </div>
+        <div class="flex-question ans-3">
+          <img class="little-bullet" src="assets/media/10תרגול מסכם/americ.svg">
+          <span>מטרה תגדיר את עצם הלמידה ולא את התוצר</span>
+        </div>
+        <div class="flex-question ans-4">
+          <img class="little-bullet" src="assets/media/10תרגול מסכם/americ.svg">
+          <span>מטרה תפריד בין רמות חשיבה</span>
+        </div>
+      </div>
+    </div>
+    <div class="speech-bubble"></div>
+  </div>
+
+  <!-- page 25 -->
+  <div id="american-question-4" class="american-question page">
+    <div class="container">
+      <div class="content-flex content-flex-height">
+        <div class="title">תרגול מסכם<span class="question-num bold third-title">4/5</span></div>
+        <div class="content">כמה זמן נמשכת פתיחת שיעור?</div>
+      </div>
+      <div class="question-container">
+        <div class="flex-question ans-1">
+          <img class="little-bullet" src="assets/media/10תרגול מסכם/americ.svg">
+          <span>הפתיחה היא החלק המרכזי בשיעור, היא תימשך כחצי שעה לפחות</span>
+        </div>
+        <div class="flex-question ans-2">
+          <img class="little-bullet" src="assets/media/10תרגול מסכם/americ.svg">
+          <span>לפי רצון המדריך</span>
+        </div>
+        <div class="flex-question ans-3">
+          <img class="little-bullet" src="assets/media/10תרגול מסכם/americ.svg">
+          <span>כאורך הסיכום</span>
+        </div>
+        <div class="flex-question ans-4">
+          <img class="little-bullet" src="assets/media/10תרגול מסכם/americ.svg">
+          <span>פתיחה בדרך כלל תהיה קצרה ותימשך כ-5-10 דקות</span>
+        </div>
+      </div>
+    </div>
+    <div class="speech-bubble"></div>
+  </div>
+
+  <!-- page 26 -->
+  <div id="american-question-5" class="american-question page">
+    <div class="container">
+      <div class="content-flex content-flex-height">
+        <div class="title">תרגול מסכם<span class="question-num bold third-title">5/5</span></div>
+        <div class="content">מה גוף השיעור חייב להכיל?</div>
+      </div>
+      <div class="question-container">
+        <div class="flex-question ans-1">
+          <img class="little-bullet" src="assets/media/10תרגול מסכם/americ.svg">
+          <span>חלוקה ליחידות וקישור ביניהן</span>
+        </div>
+        <div class="flex-question ans-2">
+          <img class="little-bullet" src="assets/media/10תרגול מסכם/americ.svg">
+          <span>פעילות להעברת החומר</span>
+        </div>
+        <div class="flex-question ans-3">
+          <img class="little-bullet" src="assets/media/10תרגול מסכם/americ.svg">
+          <span>תרגול</span>
+        </div>
+        <div class="flex-question ans-4">
+          <img class="little-bullet" src="assets/media/10תרגול מסכם/americ.svg">
+          <span>בחינה</span>
+        </div>
+      </div>
+    </div>
+    <div class="speech-bubble"></div>
+  </div>
+
+  <!-- page 27 -->
+  <div id="ending" class="page">
+    <div class="container">
+      <div class="speech-bubble big-bubble"></div>
+      <img class="robin-hod big-robin" src="assets/media/robin hood.svg">
+      <img id="replay" src="assets/media/11תרגיל מסכם/replay.svg">
+    </div>
+  </div>
+
+  <!-- prev/next + lesson map -->
+    <div id ="controls">
+      <img src="assets/media/next.svg" id="prev" class="control-button prev" alt="הקודם">
+      <img src="assets/media/next.svg" id="next" class="control-button" alt="הבא">
+      <img src="assets/media/8תרגול כתיבה/check_button.svg" id="check" alt="בדיקה">
+      <div id="lesson-map">
+        <div class="container">
+        <div id="topic-1" class="topic">
+          <img src="assets/media/map.svg" class="lesson-map-target" alt="הערכת מצב">
+          <img src="assets/media/lessonMap/matsav.svg" class="topic-text" alt="הערכת מצב">
+        </div>
+        <div id="topic-2" class="topic">
+          <img src="assets/media/map.svg" class="lesson-map-target" alt="מטרות">
+          <img src="assets/media/lessonMap/matarot.svg" class="topic-text" alt="מטרות">
+        </div>
+        <div id="topic-3" class="topic">
+          <img src="assets/media/map.svg" class="lesson-map-target" alt="מערך שיעור">
+          <img src="assets/media/lessonMap/maarach.svg" class="topic-text" alt="מערך שיעור">
+        </div>
+        <div id="topic-4" class="topic">
+          <img src="assets/media/map.svg" class="lesson-map-target" alt="דף רץ">
+          <img src="assets/media/lessonMap/daf.svg" class="topic-text" alt="דף רץ">
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
